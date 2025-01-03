@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+body{
+    background-color: black;
+    width: 100vw;
+    width: 100vh;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1500px, 100vw);
+    background-size: max(3100px, 100vh);
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    padding-top: 35px;
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .7;
+}
+
+nav> :nth-child(1) {
+    position: relative;
+    z-index: 10;
+    width:175px;
+}
+
+nav :nth-child(2) {
+    position: relative;
+    z-index: 10;
+
+}
+.nav :nth-child(1){
+    font-size: 24px;
+    background-color: rgba(10,10,10,.5);
+    color: white;
+    border-radius:4px ;
+    padding: 6px 30px;
+    border: 1px solid white;
+}
+.nav :nth-child(2){
+    font-size: 24px;
+    background-color: rgb(229, 9, 20);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 20px;
+    font-weight: 700;
+}
+.content{
+    position: relative;
+    /* background-color: black; */
+    z-index: 10;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    top: 153px;
+    width: 50vw;
+    margin: auto;
+}
+.content> :nth-child(1){
+    font-size:70px ;
+    font-weight: 900;
+}
+.content> :nth-child(2){
+    font-size: 30px;
+    font-weight: 500;
+}
+.content> :nth-child(3){
+    font-size: 20px;
+    font-weight: 200;
+}
+.content> :nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.content :nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content> :nth-child(4)> :nth-child(1){
+    background-color: rgba(10,10,10,.8);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 100px 10px 18px;
+    border: 1px solid white;
+    border-radius: 4px;
+
+}
+.content> :nth-child(4)> :nth-child(2){
+    background-color:rgb(229, 9, 20); 
+    color: white;
+    padding: 6px 20px;
+    border-radius:4px ;
+    font-size: 25px;
+    font-weight: 600;
+}
+@media screen and (max-width: 1000px){
+    nav> :nth-child(1){
+        width: 89.5px;
+    }
+    .nav> :nth-child(1){
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .nav> :nth-child(2){
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .content{
+        width: 85vw;
+    }
+    .content> :nth-child(1){
+        font-size:30px ;
+        font-weight: 900;
+    }
+    .content> :nth-child(2){
+        font-size:18px ;
+        font-weight: 900;
+    }
+    .content> :nth-child(3){
+        font-size:18px ;
+        font-weight: 900;
+    }
+    .content :nth-child(4){
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    @media screen and (min-height:1200px){
+        .main{
+            /* background-size: max(3100px, 100vh); */
+        }
+    }
